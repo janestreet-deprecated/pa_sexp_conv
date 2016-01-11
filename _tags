@@ -1,0 +1,4 @@
+# OASIS_START
+# OASIS_STOP
+<syntax_test/*.ml{,i}>: syntax_camlp4o
+<syntax/pa_sexp_conv.ml>: syntax_camlp4o

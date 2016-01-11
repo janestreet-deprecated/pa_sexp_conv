@@ -1,0 +1,25 @@
+OASISFormat:      0.4
+Name:             pa_sexp_conv
+Version:          113.00.00
+Synopsis:         Syntax extension for sexplib
+Authors:          Jane Street Group, LLC <opensource@janestreet.com>
+Copyrights:       (C) 2005-2016 Jane Street Group LLC <opensource@janestreet.com>
+Maintainers:      Jane Street Group, LLC <opensource@janestreet.com>
+License:          Apache-2.0
+LicenseFile:      LICENSE.txt
+Homepage:         https://github.com/janestreet/pa_sexp_conv
+Plugins:          StdFiles (0.3), DevFiles (0.3), META (0.3)
+XStdFilesAUTHORS: false
+XStdFilesREADME:  false
+BuildTools:       ocamlbuild
+
+Library pa_sexp_conv
+  Install:            true
+  Path:               syntax
+  Modules:            Pa_sexp_conv
+  BuildDepends:       camlp4.quotations,
+                      camlp4.extend,
+                      type_conv (>= 109.20.00)
+  XMETAType:          syntax
+  XMETARequires:      camlp4,type_conv,sexplib
+  XMETADescription:   Syntax extension for Sexplib
