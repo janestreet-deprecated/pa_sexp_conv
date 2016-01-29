@@ -1,4 +1,13 @@
 # OASIS_START
+# DO NOT EDIT (digest: 5d418a3c5e75ebcc9efa87cb9cd8f81c)
+version = "113.00.01"
+description = "Syntax extension for Sexplib"
+requires = "camlp4 type_conv sexplib"
+archive(syntax, preprocessor) = "pa_sexp_conv.cma"
+archive(syntax, toploop) = "pa_sexp_conv.cma"
+archive(syntax, preprocessor, native) = "pa_sexp_conv.cmxa"
+archive(syntax, preprocessor, native, plugin) = "pa_sexp_conv.cmxs"
+exists_if = "pa_sexp_conv.cma"
 # OASIS_STOP
 package "syntax" (
   description = "Alias for pa_sexp_conv"
