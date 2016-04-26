@@ -3,5 +3,4 @@
 package "syntax" (
   description = "Alias for pa_sexp_conv"
   requires    = "pa_sexp_conv"
-  archive     = "-ignore dumy"
 )
